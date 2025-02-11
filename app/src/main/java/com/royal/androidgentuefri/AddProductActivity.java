@@ -40,7 +40,7 @@ public class AddProductActivity extends AppCompatActivity {
         edtQty = findViewById(R.id.edtAddProductQty);
         spinnerCategory = findViewById(R.id.spinnerAddProductCategory);
 
-        String categories [] = {"Select Category","MobilePhone","Accessories","HomeAppliances"};
+        String categories [] = {"Select Category","MobilePhone 18% ","Accessories 28% ","HomeAppliances 9%"};
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item,categories);
         spinnerCategory.setAdapter(adapter);
@@ -50,6 +50,7 @@ public class AddProductActivity extends AppCompatActivity {
             public void onClick(View view) {
                    Log.i("addproduct","button clicked.....");
 
+                   boolean isError = false;
                    String productName = edtName.getText().toString();
                    String strPrice = edtPrice.getText().toString();//read -> String
                    String strQty = edtQty.getText().toString();//read ->qty
@@ -64,19 +65,29 @@ public class AddProductActivity extends AppCompatActivity {
                     //validation
                     if(productName.isEmpty()){
                         edtName.setError("ProductName Required");
+                        isError = true;
                     }
 
                     if(strQty.isEmpty()){
                         edtQty.setError("Qty Required");
+                        isError = true;
                     }
 
                     if(strPrice.isEmpty()){
                         edtPrice.setError("Price Required");
+                        isError = true;
                     }
 
-                Toast.makeText(getApplicationContext(),"Please correct Error(s)",Toast.LENGTH_LONG).show();
+                    if(isError) {
+                        Toast.makeText(getApplicationContext(), "Please correct Error(s)", Toast.LENGTH_LONG).show();
+                    }else{
+                        //price
+                    }
+                    //calucalte price if no error
+                    //payable = totalPrice + gst
+                    ///      125000 + 18%gst
 
-
+                //display on toaster
             }
         });
 
