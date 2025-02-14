@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.CloudFragment">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Message Detail"
+        android:id="@+id/tvCloudFgTitle"
+        android:textSize="15pt"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtCloudFgName"
+        android:layout_marginTop="100dp"
+        android:hint="Text name"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtCloudFgEmail"
+        android:layout_marginTop="160dp"
+        android:hint="IM Id"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCloudFgSubmit"
+        android:text="Submit"
+        android:layout_marginTop="220dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+</FrameLayout>

@@ -39,4 +39,18 @@
 
     </LinearLayout>
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@id/linearLayout"
+        android:id="@+id/frameMasterContact"
+        >
+
+    </FrameLayout>
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frameMasterContact"
+        />
+
 </RelativeLayout>
