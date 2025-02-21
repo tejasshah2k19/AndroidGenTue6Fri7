@@ -1,5 +1,6 @@
 package com.royal.androidgentuefri;
 
+import android.content.SharedPreferences;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
@@ -39,6 +40,8 @@ public class ContactActivity extends AppCompatActivity {
         imgBtnCall = findViewById(R.id.imgBtnCall);
         imgBtnCloud = findViewById(R.id.imgBtnCloud);
         imgBtnChat  = findViewById(R.id.imgBtnChat);
+
+        
 
         Drawable cloudFill = ContextCompat.getDrawable(getApplicationContext(),R.drawable.cloud_fill_24);
         Drawable chatEmpty = ContextCompat.getDrawable(getApplicationContext(),R.drawable.chat_outline_24);
