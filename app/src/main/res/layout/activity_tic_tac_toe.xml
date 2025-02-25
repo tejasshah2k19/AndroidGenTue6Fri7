@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TicTacToeActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTicTacToePlayerName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:textSize="15pt"
+        />
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="200dp"
+
+        android:rowCount="3"
+        android:columnCount="3"
+
+        >
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/imgBtn1"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+         />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/imgBtn2"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+
+            />
+
+
+        <ImageButton
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/imgBtn3"
+            />
+
+        <ImageButton
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/imgBtn4"
+            />
+
+        <ImageButton
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/imgBtn5"
+            />
+
+        <ImageButton
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/imgBtn6"
+            />
+
+        <ImageButton
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/imgBtn7"
+            />
+
+        <ImageButton
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/imgBtn8"
+            />
+
+        <ImageButton
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/imgBtn9"
+            />
+
+
+    </GridLayout>
+
+
+</RelativeLayout>
