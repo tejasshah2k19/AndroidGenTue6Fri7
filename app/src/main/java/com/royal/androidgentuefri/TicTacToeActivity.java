@@ -1,6 +1,8 @@
 package com.royal.androidgentuefri;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -14,7 +16,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class TicTacToeActivity extends AppCompatActivity {
 
     TextView tvPlayerName;
-
+    Integer player = 1;
     ImageButton imgBtn[] = new ImageButton[9];
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +31,7 @@ public class TicTacToeActivity extends AppCompatActivity {
 
         tvPlayerName = findViewById(R.id.tvTicTacToePlayerName);
 
-        tvPlayerName.setText("Player 1");
+        tvPlayerName.setText("Player "+player);
 
         imgBtn[0] = findViewById(R.id.imgBtn1);
         imgBtn[1] = findViewById(R.id.imgBtn2);
@@ -50,6 +52,20 @@ public class TicTacToeActivity extends AppCompatActivity {
 
     private void play(View view) {
         ImageButton btnClick = findViewById(view.getId());
-        btnClick.setBackground(getDrawable(R.drawable.cloud_fill_24));
+
+
+        if(btnClick.getBackground().toString().contains("Ripple")){
+            if(player == 1){
+                player=2;
+                btnClick.setBackground(getDrawable(R.drawable.circle));
+                tvPlayerName.setText("Player "+player);
+            }else if(player ==2 ){
+                player =1;
+                btnClick.setBackground(getDrawable(R.drawable.cross));
+                tvPlayerName.setText("Player "+player);
+
+            }
+        }
+
     }
 }
