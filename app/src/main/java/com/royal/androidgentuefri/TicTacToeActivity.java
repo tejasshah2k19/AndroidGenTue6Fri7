@@ -1,5 +1,6 @@
 package com.royal.androidgentuefri;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -97,15 +98,19 @@ public class TicTacToeActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Player 2 Win the Game", Toast.LENGTH_SHORT).show();
                 }else if(status == 0){
                     Toast.makeText(getApplicationContext(), "Player 1 Win the Game", Toast.LENGTH_SHORT).show();
-                }else if(status == -1){
+
+                 }else if(status == -1){
                     //draw
                     Toast.makeText(getApplicationContext(), "DRAW", Toast.LENGTH_SHORT).show();
                 }else if(status == 2){
                     //continue
                 }
 
-                if(status == 1 || status == 0){
-
+                if(status != 2 ){
+                    Dialog dialog = new Dialog(this);
+                    dialog.setTitle("Game Finish");
+                    dialog.setContentView(R.layout.dialog_game);
+                    dialog.show();
                 }
             }
         }
