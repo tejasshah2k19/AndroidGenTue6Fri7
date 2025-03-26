@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tvSignupTitle"
-        android:text="Signup"
+        android:text="@string/signup"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
         android:textSize="25pt"
@@ -26,7 +26,7 @@
             android:layout_marginTop="50dp"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
-            android:hint="Firstname"
+            android:hint="@string/firstname"
             />
 
         <EditText
@@ -37,7 +37,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
-            android:hint="Email"
+            android:hint="@string/email"
             android:inputType="textEmailAddress"
             />
 
@@ -49,7 +49,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
-                android:hint="Password"
+                android:hint="@string/password"
                 android:inputType="textPassword"
                 />
 
@@ -57,10 +57,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/btnSignupSubmit"
-                android:text="Submit"
+                android:text="@string/submit"
                 android:layout_below="@id/edtSignupPassword"
                 android:layout_marginTop="40dp"
                 android:layout_centerHorizontal="true"
                 />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvSignupLogin"
+            android:text="@string/already_having_account"
+            android:layout_below="@id/btnSignupSubmit"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="10pt"
+
+            />
 
 </RelativeLayout>

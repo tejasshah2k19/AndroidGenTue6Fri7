@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tvLoginTitle"
-        android:text="Login"
+        android:text="@string/login"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
         android:textSize="25pt"
@@ -27,7 +27,7 @@
         android:layout_marginTop="50dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        android:hint="Email"
+        android:hint="@string/email"
         android:inputType="textEmailAddress"
         />
 
@@ -39,7 +39,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        android:hint="Password"
+        android:hint="@string/password"
         android:inputType="textPassword"
         />
 
@@ -47,7 +47,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btnLoginSubmit"
-        android:text="Submit"
+        android:text="@string/submit"
         android:layout_below="@id/edtLoginPassword"
         android:layout_marginTop="40dp"
         android:layout_centerHorizontal="true"

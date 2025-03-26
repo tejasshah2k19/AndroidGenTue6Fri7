@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -38,6 +39,8 @@ public class SignupActivity extends AppCompatActivity {
     EditText edtPassword;
     Button btnSubmit;
 
+    TextView tvLogin;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,7 +57,7 @@ public class SignupActivity extends AppCompatActivity {
         edtEmail = findViewById(R.id.edtSignupEmail);
         edtPassword = findViewById(R.id.edtSignupPassword);
         btnSubmit = findViewById(R.id.btnSignupSubmit);
-
+        tvLogin = findViewById(R.id.tvSignupLogin);
 
 
 
@@ -132,7 +135,13 @@ public class SignupActivity extends AppCompatActivity {
             }
         });
 
-
+        tvLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),LoginActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private Integer signupApiCall(String jsonStr){

@@ -50,6 +50,9 @@ public class LoginActivity extends AppCompatActivity {
         edtEmail  =findViewById(R.id.edtLoginEmail);
         edtPassword  = findViewById(R.id.edtLoginPassword);
 
+        edtEmail.setText("xz1@yopmail.com");
+        edtPassword.setText("11111111");
+
         btnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
